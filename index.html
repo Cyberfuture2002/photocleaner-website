@@ -167,6 +167,70 @@
         }
 
         /* ============================================
+           COOKIE BANNER
+           ============================================ */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.15);
+            z-index: 999;
+            padding: 20px;
+            border-top: 4px solid var(--primary);
+        }
+
+        .cookie-content {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cookie-content h3 {
+            font-size: 16px;
+            margin: 0 0 8px 0;
+            color: var(--text-dark);
+        }
+
+        .cookie-content p {
+            margin: 0;
+            color: var(--text-gray);
+            font-size: 14px;
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 12px;
+            white-space: nowrap;
+        }
+
+        .cookie-buttons .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .cookie-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .cookie-buttons {
+                width: 100%;
+            }
+
+            .cookie-buttons .btn {
+                flex: 1;
+            }
+        }
+
+        /* ============================================
            UTILITIES
            ============================================ */
         .container {
@@ -1624,7 +1688,7 @@
                 <div class="trust-badge">
                     <div class="trust-badge-icon">⚡</div>
                     <div class="trust-badge-text">Keine<br>Cloud</div>
-                    <div class="trust-badge-subtext">Lokal & Offline</div>
+                    <div class="trust-badge-subtext">Lokal & Online-Lizenzprüfung</div>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-badge-icon">🛡️</div>
@@ -1671,68 +1735,12 @@
                 <div class="security-card">
                     <span class="security-icon">📡</span>
                     <h3>Offline-Betrieb</h3>
-                    <p>Funktioniert vollständig ohne Internetverbindung. Volle Kontrolle über deine Daten.  </p>
+                    <p>Funktioniert offline. Lizenzprüfung nur 1x pro Woche nötig. Volle Kontrolle über deine Daten.</p>
                 </div>
                 <div class="security-card">
                     <span class="security-icon">✓</span>
                     <h3>Volle Transparenz</h3>
                     <p>Du siehst exakt, was gelöscht wird. Jede Aktion ist nachvollziehbar und rückgängig machbar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS SECTION -->
-    <section class="section section-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Was Nutzer sagen</h2>
-                <p>Erfahrungen von Fotografen und Familien, die PhotoCleaner nutzen</p>
-            </div>
-            <div class="testimonials-grid">
-                <!-- Testimonial 1 - Placeholder -->
-                <div class="testimonial-card testimonial-placeholder">
-                    <div class="testimonial-quote">“</div>
-                    <div class="testimonial-text">
-                        Testimonial folgt nach dem Launch – hier werden echte Nutzererfahrungen erscheinen.
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">?</div>
-                        <div class="testimonial-info">
-                            <h4>Placeholder</h4>
-                            <p>Hobbyfotograf</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 - Placeholder -->
-                <div class="testimonial-card testimonial-placeholder">
-                    <div class="testimonial-quote">“</div>
-                    <div class="testimonial-text">
-                        Nach dem Launch werden hier echte Bewertungen von zufriedenen Nutzern angezeigt.
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">?</div>
-                        <div class="testimonial-info">
-                            <h4>Placeholder</h4>
-                            <p>Familienvater</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 - Placeholder -->
-                <div class="testimonial-card testimonial-placeholder">
-                    <div class="testimonial-quote">“</div>
-                    <div class="testimonial-text">
-                        Hier erscheinen später authentische Rückmeldungen von echten PhotoCleaner-Nutzern.
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">?</div>
-                        <div class="testimonial-info">
-                            <h4>Placeholder</h4>
-                            <p>Content Creator</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1960,7 +1968,7 @@
                 <div class="use-case-card">
                     <span class="use-case-icon">🔐</span>
                     <h3>Datenschutz-bewusste Nutzer</h3>
-                    <p>Verwende ein Tool, das deine Daten nicht in die Cloud hochlädt. Alles läuft lokal und komplett offline.</p>
+                    <p>Verwende ein Tool, das deine Daten nicht in die Cloud hochlädt. Alles läuft lokal. Lizenz wird 1x pro Woche online geprüft.</p>
                 </div>
             </div>
         </div>
@@ -2183,6 +2191,51 @@
         // Update countdown every second
         updateCountdown();
         setInterval(updateCountdown, 1000);
+
+        // ============================================
+        // Cookie Banner
+        // ============================================
+        function initCookieBanner() {
+            const cookieBanner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookies');
+            const rejectBtn = document.getElementById('rejectCookies');
+            
+            // Prüfe ob Nutzer schon entschieden hat
+            if (localStorage.getItem('cookieConsent')) {
+                cookieBanner.style.display = 'none';
+                return;
+            }
+
+            // Accept Button
+            acceptBtn.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieBanner.style.display = 'none';
+            });
+
+            // Reject Button
+            rejectBtn.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'rejected');
+                cookieBanner.style.display = 'none';
+            });
+        }
+
+        // Starte Cookie Banner nach dem Laden
+        document.addEventListener('DOMContentLoaded', initCookieBanner);
+        if (document.readyState === 'interactive' || document.readyState === 'complete') {
+            initCookieBanner();
+        }
     </script>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <h3>🍪 Cookie-Einwilligung</h3>
+            <p>Wir nutzen Cookies für Analytics und zur Verbesserung deiner Erfahrung. Deine Daten werden nicht an Dritte weitergegeben.</p>
+            <div class="cookie-buttons">
+                <button id="rejectCookies" class="btn btn-secondary">Ablehnen</button>
+                <button id="acceptCookies" class="btn btn-primary">Akzeptieren</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
