@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cyberfuture2002.github.io/photocleaner-website/sitemap.xml
