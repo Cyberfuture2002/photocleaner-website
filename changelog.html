@@ -75,8 +75,21 @@
         }
 
         .logo-icon {
-            width: 32px;
-            height: 32px;
+                width: 36px;
+                height: 36px;
+                display: block;
+                object-fit: contain;
+                flex-shrink: 0;
+                padding: 4px;
+                border-radius: 12px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 246, 255, 0.92));
+                box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+            }
+
+            .logo-text {
+                line-height: 1;
+                letter-spacing: -0.02em;
+                white-space: nowrap;
         }
 
         .nav-back a {
@@ -306,19 +319,19 @@
         <nav>
             <a href="index.html" class="logo">
                 <img src="assets/icon.png" alt="Winnerpic" class="logo-icon">
-                <span>Winnerpic</span>
+                <span class="logo-text">Winnerpic</span>
             </a>
             <div class="nav-back">
-                <a href="index.html">? Zurück</a>
+                <a href="index.html">? Zurï¿½ck</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <a href="index.html" class="back-button">? Zurück zur Website</a>
+        <a href="index.html" class="back-button">? Zurï¿½ck zur Website</a>
 
         <h1>?? Changelog</h1>
-        <p class="subtitle">Versionshistorie, Updates und Bug Fixes für Winnerpic.</p>
+        <p class="subtitle">Versionshistorie, Updates und Bug Fixes fï¿½r Winnerpic.</p>
 
         <!-- Version 0.8.8 Preview -->
         <div class="version-block">
@@ -334,7 +347,7 @@
                 <ul class="changelog-list features">
                     <li>Ortsfilter in der Galerie (Suche nach Standortnamen)</li>
                     <li>EXIF-basierte Gruppierung als neuer Smart-Grouping-Baustein</li>
-                    <li>Verbesserter Workflow nach der Analyse für schnellere Nachbearbeitung</li>
+                    <li>Verbesserter Workflow nach der Analyse fï¿½r schnellere Nachbearbeitung</li>
                 </ul>
             </div>
 
@@ -360,7 +373,7 @@
                 <h3>? Neue Features</h3>
                 <ul class="changelog-list features">
                     <li>Erweiterte Export-Optionen (CSV, JSON)</li>
-                    <li>Konsistentere Oberfläche in Dialogen und Listen</li>
+                    <li>Konsistentere Oberflï¿½che in Dialogen und Listen</li>
                 </ul>
             </div>
         </div>
@@ -377,9 +390,9 @@
             <div class="changelog-section">
                 <h3>? Neue Features</h3>
                 <ul class="changelog-list features">
-                    <li>Neue Sprachen: Französisch, Spanisch, Niederländisch, Italienisch</li>
-                    <li>JSON-basiertes Locale-System für bessere Wartbarkeit</li>
-                    <li>Verbesserte Fallback-Logik bei fehlenden Übersetzungen</li>
+                    <li>Neue Sprachen: Franzï¿½sisch, Spanisch, Niederlï¿½ndisch, Italienisch</li>
+                    <li>JSON-basiertes Locale-System fï¿½r bessere Wartbarkeit</li>
+                    <li>Verbesserte Fallback-Logik bei fehlenden ï¿½bersetzungen</li>
                 </ul>
             </div>
         </div>
@@ -397,7 +410,7 @@
                 <h3>? Verbesserungen</h3>
                 <ul class="changelog-list improvements">
                     <li>Onboarding mit klareren Schritten und Hilfetexten</li>
-                    <li>Update-Prüfung besser in den Einstellungen integriert</li>
+                    <li>Update-Prï¿½fung besser in den Einstellungen integriert</li>
                     <li>Gruppenstatus visuell eindeutiger (Offen, Erledigt, Neutral)</li>
                 </ul>
             </div>
@@ -410,7 +423,7 @@
                 <span class="version-date">9. April 2026</span>
                 <span class="beta-badge">BETA</span>
             </div>
-            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Merge-Workflow + Theme + Stabilität</p>
+            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Merge-Workflow + Theme + Stabilitï¿½t</p>
 
             <div class="changelog-section">
                 <h3>? Neue Features</h3>
@@ -425,7 +438,7 @@
                 <h3>?? Bug Fixes</h3>
                 <ul class="changelog-list bugfixes">
                     <li>Race-Conditions bei Thumbnail-Callbacks reduziert</li>
-                    <li>Mehrere UI-Crash-Ursachen bei gelöschten Qt-Objekten behoben</li>
+                    <li>Mehrere UI-Crash-Ursachen bei gelï¿½schten Qt-Objekten behoben</li>
                 </ul>
             </div>
         </div>
@@ -437,14 +450,14 @@
                 <span class="version-date">6. April 2026</span>
                 <span class="beta-badge">BETA</span>
             </div>
-            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Start der öffentlichen Beta</p>
+            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Start der ï¿½ffentlichen Beta</p>
 
             <div class="changelog-section">
                 <h3>? Neue Features</h3>
                 <ul class="changelog-list features">
-                    <li>Modernes Windows-UI und neue Review-Oberfläche</li>
-                    <li>Duplikat-Erkennung inklusive Qualitätsbewertung</li>
-                    <li>Sicheres Löschen über den Windows-Papierkorb</li>
+                    <li>Modernes Windows-UI und neue Review-Oberflï¿½che</li>
+                    <li>Duplikat-Erkennung inklusive Qualitï¿½tsbewertung</li>
+                    <li>Sicheres Lï¿½schen ï¿½ber den Windows-Papierkorb</li>
                 </ul>
             </div>
         </div>
@@ -461,8 +474,8 @@
             <div class="changelog-section">
                 <h3>? Erwartet in v1.0</h3>
                 <ul class="changelog-list features">
-                    <li>Weitere Performance-Optimierungen für große Bibliotheken</li>
-                    <li>Verbesserte Nutzerführung im Review-Prozess</li>
+                    <li>Weitere Performance-Optimierungen fï¿½r groï¿½e Bibliotheken</li>
+                    <li>Verbesserte Nutzerfï¿½hrung im Review-Prozess</li>
                     <li>Stabilisierung der wichtigsten Workflows</li>
                 </ul>
             </div>

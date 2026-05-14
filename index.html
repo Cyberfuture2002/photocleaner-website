@@ -351,9 +351,21 @@
         }
 
         .logo-icon {
-            width: 32px;
-            height: 32px;
-            display: block;
+                width: 36px;
+                height: 36px;
+                display: block;
+                object-fit: contain;
+                flex-shrink: 0;
+                padding: 4px;
+                border-radius: 12px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 246, 255, 0.92));
+                box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+            }
+
+            .logo-text {
+                line-height: 1;
+                letter-spacing: -0.02em;
+                white-space: nowrap;
         }
 
         .nav-links {
@@ -445,7 +457,7 @@
             
             nav { padding: 0 var(--spacing-md); height: 56px; }
             .logo { font-size: 18px; }
-            .logo-icon { width: 28px; height: 28px; }
+            .logo-icon { width: 32px; height: 32px; padding: 3px; }
             .nav-cta { gap: var(--spacing-sm); }
             .btn { padding: 8px 16px; font-size: 13px; }
         }
@@ -1642,7 +1654,7 @@
         <nav>
             <a href="/" class="logo">
                 <img src="assets/icon.png" alt="Winnerpic" class="logo-icon">
-                <span>Winnerpic</span>
+                <span class="logo-text">Winnerpic</span>
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
                 <span></span>
