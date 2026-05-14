@@ -1,0 +1,59 @@
+<svg width="700" height="420" viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Winnerpic App Vorschau">
+    <rect width="700" height="420" rx="8" fill="#1e293b"/>
+    <rect width="700" height="36" rx="8" fill="#0f172a"/>
+    <rect y="28" width="700" height="8" fill="#0f172a"/>
+    <rect x="10" y="10" width="16" height="16" rx="3" fill="transparent" stroke="#334155" stroke-width="1"/>
+    <image href="icon.png" x="10" y="10" width="16" height="16" preserveAspectRatio="xMidYMid slice"/>
+    <text x="34" y="23" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="12" font-weight="600">Winnerpic v0.8.7</text>
+    <rect x="592" y="0" width="36" height="36" fill="transparent"/>
+    <text x="610" y="22" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="14">&#x2212;</text>
+    <rect x="628" y="0" width="36" height="36" fill="transparent"/>
+    <rect x="639" y="11" width="13" height="13" rx="1" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="664" y="0" width="36" height="36" fill="#c42b1c"/>
+    <text x="682" y="22" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="13">&#x2715;</text>
+    <rect x="0" y="36" width="176" height="384" fill="#1e293b"/>
+    <rect x="10" y="48" width="156" height="30" rx="4" fill="#2563eb" opacity="0.9"/>
+    <text x="22" y="67" fill="white" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600">Gruppe 1 - 5 Bilder</text>
+    <rect x="10" y="86" width="156" height="30" rx="4" fill="#334155"/>
+    <text x="22" y="105" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="11">Gruppe 2 - 3 Bilder</text>
+    <rect x="10" y="124" width="156" height="30" rx="4" fill="#334155"/>
+    <text x="22" y="143" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="11">Gruppe 3 - 8 Bilder</text>
+    <rect x="10" y="162" width="156" height="30" rx="4" fill="#334155"/>
+    <text x="22" y="181" fill="#22c55e" font-family="Segoe UI,sans-serif" font-size="11">Gruppe 4 - 2 Bilder</text>
+    <rect x="176" y="36" width="524" height="384" fill="#f8fafc"/>
+    <rect x="176" y="36" width="524" height="38" fill="#fff"/>
+    <line x1="176" y1="74" x2="700" y2="74" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="190" y="44" width="56" height="22" rx="4" fill="#2563eb"/>
+    <text x="218" y="59" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600">Keep</text>
+    <rect x="254" y="44" width="56" height="22" rx="4" fill="#dc2626"/>
+    <text x="282" y="59" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600">Delete</text>
+    <rect x="318" y="44" width="56" height="22" rx="4" fill="#f59e0b"/>
+    <text x="346" y="59" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="10" font-weight="600">Unsure</text>
+    <rect x="194" y="86" width="154" height="130" rx="6" fill="#e2e8f0"/>
+    <text x="271" y="148" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="28">IMG</text>
+    <text x="271" y="170" text-anchor="middle" fill="#64748b" font-family="Segoe UI,sans-serif" font-size="10">IMG_2024.jpg</text>
+    <rect x="194" y="220" width="60" height="16" rx="3" fill="#22c55e"/>
+    <text x="224" y="232" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="9" font-weight="600">Best</text>
+    <rect x="360" y="86" width="154" height="130" rx="6" fill="#e2e8f0"/>
+    <text x="437" y="148" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="28">IMG</text>
+    <text x="437" y="170" text-anchor="middle" fill="#64748b" font-family="Segoe UI,sans-serif" font-size="10">IMG_2025.jpg</text>
+    <rect x="360" y="220" width="60" height="16" rx="3" fill="#ef4444"/>
+    <text x="390" y="232" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="9" font-weight="600">Duplikat</text>
+    <rect x="526" y="86" width="154" height="130" rx="6" fill="#e2e8f0"/>
+    <text x="603" y="148" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI,sans-serif" font-size="28">IMG</text>
+    <text x="603" y="170" text-anchor="middle" fill="#64748b" font-family="Segoe UI,sans-serif" font-size="10">IMG_2026.jpg</text>
+    <rect x="526" y="220" width="60" height="16" rx="3" fill="#f59e0b"/>
+    <text x="556" y="232" text-anchor="middle" fill="white" font-family="Segoe UI,sans-serif" font-size="9" font-weight="600">Pruefen</text>
+    <rect x="194" y="244" width="154" height="36" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="208" y="259" fill="#334155" font-family="Segoe UI,sans-serif" font-size="10">Qualitaet:</text>
+    <text x="208" y="273" fill="#22c55e" font-family="Segoe UI,sans-serif" font-size="11" font-weight="700">94/100</text>
+    <rect x="360" y="244" width="154" height="36" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="374" y="259" fill="#334155" font-family="Segoe UI,sans-serif" font-size="10">Qualitaet:</text>
+    <text x="374" y="273" fill="#f59e0b" font-family="Segoe UI,sans-serif" font-size="11" font-weight="700">72/100</text>
+    <rect x="526" y="244" width="154" height="36" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="540" y="259" fill="#334155" font-family="Segoe UI,sans-serif" font-size="10">Qualitaet:</text>
+    <text x="540" y="273" fill="#ef4444" font-family="Segoe UI,sans-serif" font-size="11" font-weight="700">45/100</text>
+    <rect x="194" y="380" width="488" height="22" rx="4" fill="#e2e8f0"/>
+    <rect x="194" y="380" width="293" height="22" rx="4" fill="#2563eb"/>
+    <text x="438" y="395" text-anchor="middle" fill="#334155" font-family="Segoe UI,sans-serif" font-size="11" font-weight="600">3 von 5 Gruppen bearbeitet</text>
+</svg>
