@@ -167,7 +167,7 @@
         }
 
         .changelog-list li:before {
-            content: "?";
+            content: "+";
             position: absolute;
             left: 0;
             color: var(--primary);
@@ -175,19 +175,19 @@
         }
 
         .changelog-list.bugfixes li:before {
-            content: "ICON";
+            content: "-";
         }
 
         .changelog-list.features li:before {
-            content: "?";
+            content: "+";
         }
 
         .changelog-list.improvements li:before {
-            content: "?";
+            content: "~";
         }
 
         .changelog-list.security li:before {
-            content: "ICON";
+            content: "!";
         }
 
         .changelog-section {
@@ -332,6 +332,33 @@
 
         <h1>Changelog</h1>
         <p class="subtitle">Versionshistorie, Updates und Bug Fixes f�r Winnerpic.</p>
+
+        <!-- Version 0.9.2 -->
+        <div class="version-block">
+            <div class="version-header">
+                <span class="version-number">v0.9.2</span>
+                <span class="version-date">15. Mai 2026</span>
+                <span class="beta-badge">LATEST</span>
+            </div>
+            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Stabilitaet und Feinschliff vor v1.0</p>
+
+            <div class="changelog-section">
+                <h3>Verbesserungen</h3>
+                <ul class="changelog-list improvements">
+                    <li>Verbesserte Performance und stabilere Verarbeitung grosser Bibliotheken</li>
+                    <li>Feinschliff an UI-Texten und Release-Kommunikation</li>
+                    <li>Optimierte Update-Informationen fuer Download und Release Notes</li>
+                </ul>
+            </div>
+
+            <div class="changelog-section">
+                <h3>Bug Fixes</h3>
+                <ul class="changelog-list bugfixes">
+                    <li>Kleinere UI- und Anzeigeprobleme behoben</li>
+                    <li>Robustere Fehlerbehandlung in zentralen Workflows</li>
+                </ul>
+            </div>
+        </div>
 
         <!-- Version 0.8.8 Preview -->
         <div class="version-block">
