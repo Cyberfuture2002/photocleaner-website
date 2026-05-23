@@ -340,22 +340,43 @@
                 <span class="version-date">15. Mai 2026</span>
                 <span class="beta-badge">LATEST</span>
             </div>
-            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Stabilitaet und Feinschliff vor v1.0</p>
+            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Reform &amp; Stabilization Release</p>
+
+            <div class="changelog-section">
+                <h3>Release-Fokus</h3>
+                <ul class="changelog-list improvements">
+                    <li>Interne Architektur ueber Reform-Phasen A-G stabilisiert</li>
+                    <li>Keine neue Feature-Breite, Fokus auf Zuverlaessigkeit und Reaktionsfaehigkeit</li>
+                </ul>
+            </div>
 
             <div class="changelog-section">
                 <h3>Verbesserungen</h3>
                 <ul class="changelog-list improvements">
-                    <li>Verbesserte Performance und stabilere Verarbeitung grosser Bibliotheken</li>
-                    <li>Feinschliff an UI-Texten und Release-Kommunikation</li>
-                    <li>Optimierte Update-Informationen fuer Download und Release Notes</li>
+                    <li>EXIF-Gruppierung und Reverse-Geocoding laufen nicht mehr im UI-Thread</li>
+                    <li>Streaming- und Chunk-Indexierung statt Full-List-Materialisierung</li>
+                    <li>Batched IN-Query-Lookups fuer Dateiexistenzpruefungen</li>
+                    <li>True-LRU Query-Cache mit Hit/Miss/Eviction-Metriken</li>
+                    <li>Additive Schema-Migration file_hash_sha256 mit Resume-faehigem Backfill</li>
+                    <li>Strukturierte Logs und Pipeline-Metriken fuer Observability</li>
                 </ul>
             </div>
 
             <div class="changelog-section">
                 <h3>Bug Fixes</h3>
                 <ul class="changelog-list bugfixes">
-                    <li>Kleinere UI- und Anzeigeprobleme behoben</li>
-                    <li>Robustere Fehlerbehandlung in zentralen Workflows</li>
+                    <li>Watchdog-Timeouts fuer Worker mit deterministischem Recovery</li>
+                    <li>DB-Batch-Fehler mit explizitem Rollback abgesichert</li>
+                    <li>Scanner-Fehler pro Pfad als lokale Fehler behandelt (Scan laeuft weiter)</li>
+                    <li>Keyword-only Konstruktoren gegen Dependency-Miswiring</li>
+                </ul>
+            </div>
+
+            <div class="changelog-section">
+                <h3>Validierung</h3>
+                <ul class="changelog-list features">
+                    <li>Skalierungstests 10k und 50k abgeschlossen</li>
+                    <li>Alle bestehenden Tests gruen, zusaetzliche Recovery-/Migrationstests aktiv</li>
                 </ul>
             </div>
         </div>
@@ -496,14 +517,26 @@
                 <span class="version-date">Geplant: 3. Oktober 2026</span>
                 <span class="beta-badge">PLANNED</span>
             </div>
-            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Offizielle v1.0 Release</p>
+            <p style="margin-bottom: 24px; font-weight: 600; color: var(--text-dark);">Roadmap-Status fuer den Launch</p>
 
             <div class="changelog-section">
-                <h3>Erwartet in v1.0</h3>
+                <h3>Launch-kritisch (offen)</h3>
                 <ul class="changelog-list features">
-                    <li>Weitere Performance-Optimierungen f�r gro�e Bibliotheken</li>
-                    <li>Verbesserte Nutzerf�hrung im Review-Prozess</li>
-                    <li>Stabilisierung der wichtigsten Workflows</li>
+                    <li>Frozen-Build Smoke-Tests auf 5/5 abschliessen (inkl. Win10/Win11)</li>
+                    <li>Stripe + Supabase E2E-Validierung finalisieren</li>
+                    <li>Code-Signing fuer EXE/MSI vorbereiten und umsetzen</li>
+                    <li>Release Candidate 1.0.0-rc1 setzen und taggen</li>
+                </ul>
+            </div>
+
+            <div class="changelog-section">
+                <h3>Aktuell in Arbeit</h3>
+                <ul class="changelog-list improvements">
+                    <li>Abschluss der verbleibenden Smoke-Tests</li>
+                    <li>Vorbereitung der Stripe/Supabase E2E-Testmatrix</li>
+                    <li>Performance Phase 2 (DB/Cache/Rendering-Hotspots)</li>
+                    <li>GPU-Pipeline-Stabilisierung im Analysepfad</li>
+                    <li>Export-System-Erweiterungen (RC-relevant)</li>
                 </ul>
             </div>
         </div>
@@ -514,7 +547,7 @@
                 <strong>Ein Problem gefunden?</strong> Bitte berichten Sie unter <a href="mailto:support@Winnerpic.de">support@Winnerpic.de</a>
             </p>
             <p style="margin-top: 16px; color: var(--text-gray); font-size: 14px;">
-                Letztes Update: Mai 2026
+                Letztes Update: 23. Mai 2026 (Web-Sync mit Roadmap/Changelog)
             </p>
         </div>
     </main>
